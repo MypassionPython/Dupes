@@ -1,3 +1,6 @@
+[![tests](https://img.shields.io/github/actions/workflow/status/MypassionPython/Dupes/tests.yml?branch=main)](../../actions)
+[![license](https://img.shields.io/github/license/MypassionPython/Dupes)](LICENSE)
+
 # dupes
 Сканує папку, рахує SHA256 і показує групи файлів з однаковим хешем.
 
