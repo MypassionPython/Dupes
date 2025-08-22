@@ -10,8 +10,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'   # <-- було '3.x'
-      - name: Make CSV and run stats
+          python-version: '3.12'
+      - name: Create 2 duplicate files and scan
         run: |
-          printf "price,qty\n10,1\n20,2\n30,3\n" > d.csv
-          python csv_stats.py d.csv price -d ","
+          mkdir -p tmp
+          echo same > tmp/a.txt
+          echo same > tmp/b.txt
+          python dupes.py tmp
